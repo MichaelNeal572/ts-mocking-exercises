@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run test-jest && npm run test-mocha && npm run test-jasmine",
     "test-jest": "jest",
-    "test-mocha": "ts-mocha src/**/*.test.ts --require mocha_setup.js",
+    "test-mocha": "nodemon --ext ts --exec ts-mocha src/**/*.test.ts --require mocha_setup.js",
     "test-jasmine": "nodemon --ext ts --exec ts-node --project ./tsconfig.json node_modules/jasmine/bin/jasmine --config=jasmine.json"
   },
   "author": "",

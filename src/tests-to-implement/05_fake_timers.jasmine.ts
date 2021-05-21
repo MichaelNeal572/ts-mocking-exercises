@@ -12,7 +12,6 @@ describe('generateDayMessage', () => {
   
   it('returns a message containing the current time', () => {
     // Arrange
-    
     jasmine.clock().mockDate(new Date(2020,12,20,1,30,30));
 
     // Act
